@@ -1,4 +1,90 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+  width: 90%;
+  max-width: 375px;
+  margin: auto;
+}
+
+/* Text component */
+.text {
+  padding-top: 95px;
+}
+.text h2 {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+  padding-bottom: 1em;
+}
+.text span {
+  font-weight: 600;
+}
+
+.text p {
+  color: hsl(229, 6%, 66%);
+  width: 90%;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 80px;
+}
+
+/* Card component */
+.card {
+  width: 90%;
+  margin: 0 auto 1.5em auto;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 3px 5px 20px #dee5e9;
+  border: none;
+  border-radius: 10px;
+  height: 230px;
+  position: relative;
+}
+
+.card-container {
+  width: 85%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+.card-container h3 {
+  color: hsl(234, 12%, 34%);
+  padding: .5em 0 .5em 0;
+  font-weight: 600;
+}
+
+.card-container p {
+  color: hsl(229, 6%, 66%);
+  padding-bottom: 1.5em;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.card-container img {
+  position: absolute;
+  right: 30px;
+}
+
+.cardOne {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.cardTwo {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.cardThree {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+.cardFour {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
