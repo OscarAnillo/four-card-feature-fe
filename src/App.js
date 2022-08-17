@@ -10,10 +10,11 @@ function App() {
     <div className="App">
       <div className="container">
         <TextComponent />
+        <div className="row">
         {pageData.map(item => (
           <CardComponent cardTitle={item.name} cardParagraph={item.text} cardImg={item.image} className={item.className} />
         ))}
-        
+        </div>
       </div>
     </div>
   );

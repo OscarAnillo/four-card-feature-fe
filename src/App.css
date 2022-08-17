@@ -10,6 +10,7 @@
   font-family: 'Poppins', sans-serif;
   position: relative;
   background-color: hsl(0, 0%, 98%);
+  min-height: 100vh;
 }
 
 .container {
@@ -22,11 +23,13 @@
 .text {
   padding-top: 95px;
 }
+
 .text h2 {
   font-weight: 200;
   color: hsl(234, 12%, 34%);
   padding-bottom: 1em;
 }
+
 .text span {
   font-weight: 600;
 }
@@ -79,12 +82,83 @@
 .cardOne {
   border-top: 3px solid hsl(180, 62%, 55%);
 }
+
 .cardTwo {
   border-top: 3px solid hsl(0, 78%, 62%);
 }
+
 .cardThree {
   border-top: 3px solid hsl(34, 97%, 64%);
 }
+
 .cardFour {
   border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+@media(min-width: 765px) {
+  .App {
+    background-image: url('https://media.istockphoto.com/vectors/abstract-white-background-geometric-texture-vector-id909493912?k=20&m=909493912&s=170667a&w=0&h=ZsTDUusHbGddVsQzkaZ8iDeMOf0YGPNtZPgz9Pykyrg=');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+  }
+  .container {
+    width: 90%;
+    height: 100%;
+    max-width: 1025px;
+    margin: auto;
+  }
+
+  .row {
+    height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* Text component */
+  .text {
+    padding-top: 90px;
+  }
+
+  .text h2 {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 30px;
+    font-size: 35px;
+  }
+
+  .text p {
+    width: 55%;
+    margin: auto;
+    padding-bottom: 70px;
+  }
+
+  /* Card component */
+  .card {
+    width: 31%;
+    margin: auto;
+    box-shadow: 3px 5px 20px #dee5e9;
+    height: 250px;
+  }
+
+  .card-container p {
+    font-size: 13px;
+  }
+
+  .card-container img {
+    top: 160px
+  }
+
+  .cardOne {
+    position: relative;
+    top: 150px;
+  }
+
+  .cardThree {
+    position: relative;
+    top: 150px;
+  }
 }
