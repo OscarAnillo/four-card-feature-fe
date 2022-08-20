@@ -11,6 +11,8 @@
   position: relative;
   background-color: hsl(0, 0%, 98%);
   min-height: 100vh;
+  background-image: url('/public/images/diamond-sunset.svg');
+  border: 1px solid transparent;
 }
 
 .container {
@@ -48,7 +50,7 @@
   margin: 0 auto 1.5em auto;
   text-align: left;
   background-color: #fff;
-  box-shadow: 3px 5px 20px #dee5e9;
+  box-shadow: 3px 5px 8px #000;
   border: none;
   border-radius: 10px;
   height: 230px;
@@ -97,11 +99,10 @@
 
 @media(min-width: 765px) {
   .App {
-    background-image: url('https://media.istockphoto.com/vectors/abstract-white-background-geometric-texture-vector-id909493912?k=20&m=909493912&s=170667a&w=0&h=ZsTDUusHbGddVsQzkaZ8iDeMOf0YGPNtZPgz9Pykyrg=');
+    background-image: url('/public/images/diamond-sunset.svg');
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: border-box;
+    background-repeat: repeat;
+    background-size: contain;
   }
   .container {
     width: 90%;
@@ -134,13 +135,14 @@
     width: 55%;
     margin: auto;
     padding-bottom: 70px;
+    text-shadow: 1px 1px 1px #000;
   }
 
   /* Card component */
   .card {
     width: 31%;
     margin: auto;
-    box-shadow: 3px 5px 20px #dee5e9;
+    box-shadow: 3px 5px 8px #000;
     height: 250px;
   }
 
