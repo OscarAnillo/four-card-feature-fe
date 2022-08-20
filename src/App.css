@@ -13,6 +13,7 @@
   min-height: 100vh;
   background-image: url('/public/images/diamond-sunset.svg');
   border: 1px solid transparent;
+  overflow: hidden;
 }
 
 .container {
